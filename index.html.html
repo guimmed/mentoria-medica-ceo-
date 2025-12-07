@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria Médica CEO</title>
+
+    <!-- TIPOGRAFIA -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS - Animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+    <style>
+        :root {
+            --black:#000;
+            --dark:#111;
+            --gray:#555;
+            --light:#f7f7f7;
+            --white:#fff;
+            --title:'Playfair Display', serif;
+            --text:'Inter', sans-serif;
+        }
+
+        body {
+            margin:0;
+            font-family:var(--text);
+            background:var(--white);
+            color:var(--dark);
+        }
+
+        section {
+            max-width:1100px;
+            margin:auto;
+            padding:90px 20px;
+        }
+
+        h1,h2 {
+            font-family:var(--title);
+        }
+
+        h1 { font-size:3rem; }
+        h2 { font-size:2rem; }
+
+        p { font-size:1.15rem; color:var(--gray); }
+
+        .btn {
+            display:inline-block;
+            padding:16px 36px;
+            background:var(--black);
+            color:var(--white);
+            text-decoration:none;
+            font-weight:600;
+            border-radius:6px;
+            transition:.3s;
+        }
+        .btn:hover {
+            transform:translateY(-3px);
+            background:#000;
+        }
+
+        .hero-img {
+            width:100%;
+            border-radius:14px;
+            margin-top:40px;
+            box-shadow:0 10px 40px rgba(0,0,0,.15);
+        }
+
+        .mockup-img {
+            width:100%;
+            border-radius:18px;
+            box-shadow:0 10px 40px rgba(0,0,0,.15);
+            margin:30px 0;
+        }
+
+        .checklist {
+            line-height:2;
+            font-size:1.2rem;
+            margin-top:20px;
+        }
+
+        /* FORM */
+        form {
+            padding:30px;
+            background:var(--light);
+            border-radius:12px;
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+            max-width:600px;
+        }
+
+        input, textarea {
+            padding:14px;
+            border-radius:6px;
+            border:1px solid #ccc;
+            font-size:1rem;
+            font-family:var(--text);
+            width:100%;
+        }
+
+        footer {
+            padding:50px 20px;
+            text-align:center;
+            background:#000;
+            color:#fff;
+            margin-top:60px;
+        }
+
+        @media(max-width:768px){
+            h1 { font-size:2.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SEÇÃO 1 — HERO -->
+<section data-aos="fade-up">
+    <h1>Mentoria MÉDICA CEO</h1>
+    <p>Organize sua clínica, sua agenda e sua vida com o método exclusivo ACM.</p>
+    <a href="#form" class="btn">Quero entrar para a próxima turma</a>
+
+    <!-- MOCKUP PREMIUM -->
+    <img class="hero-img" src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Mockup premium">
+</section>
+
+<!-- SEÇÃO 2 -->
+<section data-aos="fade-up">
+    <h2>Você é médica, empreendedora, gestora e docente?</h2>
+    <p>E está tentando equilibrar tudo ao mesmo tempo?</p>
+    <p>A mentoria foi criada exatamente para esse perfil.</p>
+
+    <img class="mockup-img" src="https://images.pexels.com/photos/3182754/pexels-photo-3182754.jpeg" alt="Mockup institucional">
+</section>
+
+<!-- SEÇÃO 3 — Sintomas -->
+<section data-aos="fade-right">
+    <h2>Os sintomas</h2>
+    <div class="checklist">
+        ✔️ Agenda caótica <br>
+        ✔️ Sem tempo <br>
+        ✔️ Clínica dependendo demais de você <br>
+        ✔️ Demandas infinitas <br>
+        ✔️ Sobrecarga mental <br>
+        ✔️ Vida pessoal sufocada
+    </div>
+</section>
+
+<!-- SEÇÃO 4 — Solução -->
+<section data-aos="fade-left">
+    <h2>O Método ACM organiza sua vida médica:</h2>
+    <div class="checklist">
+        • Prioridade <br>
+        • Agenda <br>
+        • Clínica <br>
+        • Equipe <br>
+        • Energia <br>
+        • Decisões
+    </div>
+</section>
+
+<!-- SEÇÃO 5 — Mentora -->
+<section data-aos="fade-up">
+    <h2>Sobre a Mentora</h2>
+    <p>Médica, empresária, CEO de clínica e coordenadora do curso de medicina em um dos maiores grupos educacionais do Brasil.</p>
+
+    <!-- mockup perfil -->
+    <img class="mockup-img" src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg" alt="Mentora mockup">
+</section>
+
+<!-- SEÇÃO 6 — Programa -->
+<section data-aos="zoom-in">
+    <h2>O Programa</h2>
+    <p>8 módulos profundos com encontros semanais, ferramentas, templates e suporte.</p>
+
+    <img class="mockup-img" src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Mockup programa">
+</section>
+
+<!-- SEÇÃO 7 — Benefícios -->
+<section data-aos="fade-right">
+    <h2>Benefícios Reais</h2>
+    <div class="checklist">
+        • Até 15h/semana de produtividade<br>
+        • Redução da exaustão<br>
+        • Mais tempo para a família<br>
+        • Clínica fluindo sem você<br>
+        • Rotina médica leve
+    </div>
+</section>
+
+<!-- SEÇÃO 8 — FORMULÁRIO -->
+<section id="form" data-aos="fade-up">
+    <h2>Entre na Lista de Espera</h2>
+    <p>Preencha para receber a próxima abertura da mentoria.</p>
+
+    <form id="leadForm">
+        <input name="nome" placeholder="Seu nome" required>
+        <input name="email" type="email" placeholder="Seu e-mail" required>
+        <input name="telefone" placeholder="Seu WhatsApp">
+        <textarea name="mensagem" rows="4" placeholder="Sua necessidade atual"></textarea>
+
+        <button class="btn" type="submit">Quero entrar</button>
+    </form>
+
+    <p id="msg" style="margin-top:20px; font-weight:600;"></p>
+</section>
+
+<footer>
+    © 2025 — Mentoria Médica CEO • Todos os direitos reservados.
+</footer>
+
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init();</script>
+
+<!-- FORM SCRIPT (Google Sheets) -->
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const scriptURL = "COLE-AQUI-O-URL-DO-SEU-APPS-SCRIPT"; // <<< IMPORTANTE
+    const form = document.getElementById("leadForm");
+    const msg = document.getElementById("msg");
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form)})
+        .then(() => {
+            msg.innerHTML = "Cadastro realizado com sucesso!";
+            form.reset();
+        })
+        .catch(() => {
+            msg.innerHTML = "Erro ao enviar. Tente novamente.";
+        });
+});
+</script>
+
+</body>
+</html>
